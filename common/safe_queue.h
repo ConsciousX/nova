@@ -2,7 +2,6 @@
 
 #include <queue>
 #include <mutex>
-#include <queue>
 
 //thread safe queue adaptor
 template<typename T>
