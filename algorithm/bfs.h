@@ -2,6 +2,8 @@
 
 #include <queue>
 
+namespace nova {
+
 template<class T, class C = std::queue<T*>>
 void bfs(T* start, std::function<bool(T*)> stop_func = [](T*){return false;})
 {
@@ -32,4 +34,4 @@ void bfs(T* start, std::function<bool(T*)> stop_func = [](T*){return false;})
     }
 }
 
-
+} //namespace nova

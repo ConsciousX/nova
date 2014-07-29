@@ -2,6 +2,8 @@
 
 #include <stack>
 
+namespace nova {
+
 template<class T, class C = std::stack<T*>>
 void dfs(T* start, std::function<bool(T*)> stop_func = [](T*)->bool{return false;})
 {
@@ -25,3 +27,5 @@ void dfs(T* start, std::function<bool(T*)> stop_func = [](T*)->bool{return false
         }
     }
 }
+
+} //namespace nova
